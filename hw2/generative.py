@@ -21,11 +21,11 @@ x_test_data = np.genfromtxt(sys.argv[5], dtype = "int", skip_header=True ,delimi
 
 # Read model
 try:
-  	with open("./model/1w_prob.csv") as model_file:
+  	with open("./model/w_prob.csv") as model_file:
   		model_list = model_file.read().splitlines()
   		w_model = np.array([[str(item) for item in line.split(",")] for line in model_list])
 
-	with open("./model/1b_prob.csv") as model_file:
+	with open("./model/b_prob.csv") as model_file:
 		model_list = model_file.read().splitlines()
 		b_model = np.array([[str(item) for item in line.split(",")] for line in model_list])
 
