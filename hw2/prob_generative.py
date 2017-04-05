@@ -76,7 +76,8 @@ class ProbGen:
 		return w,b
 		
 	def sigmoid(self, z):
-		return (1.0/(1+np.exp(-z)))
+		res = 1.0/(1.0+np.exp(-z))
+		return np.clip(res, 0.00000000000001, 0.99999999999999)
 
 	def test_function(self):
 
