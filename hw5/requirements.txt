@@ -1,0 +1,6 @@
+###### Requirements with Version Specifiers ######
+nltk >=3.2.3
+numpy >=1.11.1
+keras >=2.0.4
+cPickle >=1.71
+sklearn >=0.14.1
