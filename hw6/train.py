@@ -242,7 +242,7 @@ if __name__ == "__main__":
 #---------------------------------------------------------------------------------------------------------------------------------------
 
     #model = load_model(os.path.join(store_path,'best_model.h5'), custom_objects={'root_mean_squared_error': movies_class.root_mean_squared_error})
-    model = load_model(('./model/best_model.h5'), custom_objects={'root_mean_squared_error': movies_class.root_mean_squared_error})
+    model = load_model(('./model/model_MF.h5'), custom_objects={'root_mean_squared_error': movies_class.root_mean_squared_error})
     Y_test = model.predict([test_users, test_movies])
 
     #Y_test = Y_test*rating_SD+rating_mean
