@@ -12,7 +12,7 @@ import scipy as sp
 
 # Parameters
 micro_humility_factor = 1     #    range from 0 (complete humility) to 1 (no humility)
-macro_humility_factor = 0.985
+macro_humility_factor = 0.9875
 jason_weight = .22
 bruno_weight = .22308
 reynaldo_weight = 1 - jason_weight - bruno_weight
@@ -620,7 +620,7 @@ results["price_doc"] =results["price_doc"] *0.9915
 
 results.drop(["price_doc_reynaldo", "price_doc_bruno", "price_doc_jason"],axis=1,inplace=True)
 results.head()
-results.to_csv('unadjusted_combo.csv', index=False)
+#results.to_csv('unadjusted_combo.csv', index=False)
 
 # Adjust (v 11)
 lny = np.log(results.price_doc)
